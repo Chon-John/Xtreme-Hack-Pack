@@ -98,6 +98,7 @@ integer = 5
 string = "dogs"
 
 # Code here
+print (str(integer) + " " + string)
 
 
 
