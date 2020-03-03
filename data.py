@@ -88,7 +88,7 @@ string2 = "world"
 
 # Code here
 
-print (string1 + string2)
+print (string1 + " " + string2)
 
 
 ############# Q7. Print the phrase "5 dogs" using the 2 variables defined below ############
@@ -109,7 +109,7 @@ string = "5"
 
 # Code here
 
-print(x+'string')
+
 
 ############# Q9. Print the sum of the first and third element in the list "numbers" and print the result ############
 # Topic: tuples
