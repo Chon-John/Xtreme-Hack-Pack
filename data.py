@@ -6,7 +6,8 @@ y = 3
 
 # Code here
 
-
+x = 5
+print(x+y)
 
 
 
@@ -21,7 +22,8 @@ y = 2
 
 # Code here
 
-
+x %= 3
+print(x+y)
 
 
 
@@ -38,10 +40,10 @@ y = 3
 
 # Code here
 
+print(x/y+y*x)
 
 
-
-############ Q4.
+############ Q4.s
 # 1) Create a new variable, z
 # 2) Assign the remainder of x divided by y to variable z
 # 3) Multiply the remainder with x 
@@ -53,8 +55,10 @@ y = 3
 x = 8
 y = 3
 
-# Code here
-
+z = x % y
+a = z*x
+x /= a
+print(x)
 
 
 
@@ -71,7 +75,8 @@ x = 9
 # Code here
 
 
-
+#print(x^(1/2))
+print(math.sqrt(x))
 
 
 
@@ -83,7 +88,7 @@ string2 = "world"
 
 # Code here
 
-
+print (string1 + string2)
 
 
 ############# Q7. Print the phrase "5 dogs" using the 2 variables defined below ############
@@ -104,7 +109,7 @@ string = "5"
 
 # Code here
 
-
+print(x+'string')
 
 ############# Q9. Print the sum of the first and third element in the list "numbers" and print the result ############
 # Topic: tuples
