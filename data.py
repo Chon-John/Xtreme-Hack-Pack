@@ -109,7 +109,7 @@ x = 3
 string = "5"
 
 # Code here
-
+print(x+int(string))
 
 
 ############# Q9. Print the sum of the first and third element in the list "numbers" and print the result ############
