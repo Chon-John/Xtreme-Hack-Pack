@@ -75,7 +75,7 @@ x = 9
 # Code here
 
 
-#print(x^(1/2))
+print(x**(1/2))
 print(math.sqrt(x))
 
 
