@@ -5,7 +5,7 @@ numbers = (4, 9, 16, 36)
 
 # Code here
 
-
+print(numbers[0]+numbers[2])
 
 
 ############# Q10. Fill out the next 3 nubmers in the pattern using the append() function and print the result ############
@@ -15,7 +15,10 @@ numbers = [4, 9, 16, 25]
 
 # Code here
 
-
+numbers.append(6**2)
+numbers.append(7**2)
+numbers.append(8**2)
+print(numbers)
 
 
 
@@ -28,8 +31,8 @@ numbers = [4, 9, 16, 25]
 
 # Code here
 
-
-
+numbers.append(numbers[1]+numbers[3])
+print(numbers)
 
 
 
@@ -40,8 +43,8 @@ numbers = [4, 9, 16, 36]
 
 # Code here
 
-
-
+numbers.insert(3,5**2)
+print(numbers)
 
 
 ############# Q13. Remove the element that breaks the pattern and print the result ############
