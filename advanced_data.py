@@ -71,10 +71,13 @@ numbers = [3, 9, 16, 25, 36]
 
 # Code here
 
+def price(number):
+    return ("$" + str(number))
+
 BankAccount = {
-    "Alex": "$100",
-    "Kevin": "$50",
-    "Henry": "$500"
+    "Alex": 100,
+    "Kevin": 50,
+    "Henry": 500
 }
 print(BankAccount)
 
@@ -98,13 +101,13 @@ print(BankAccount)
 
 TransactionSheet = {
     "Alex": {
-        "sweater": "$100"
+        "sweater": 100
     },
     "Kevin": {
-        "bookbag": "$50"
+        "bookbag": 50
     },
     "Henry": {
-        "scarf": "$500"
+        "scarf": 500
     }
 }
 print(TransactionSheet)
@@ -124,16 +127,11 @@ print(TransactionSheet)
 
 # Code here
 
-TransactionSheet["Jason"] = {"wallet": "$250"}
-TransactionSheet["Michael"] = {"pair of sneakers": "$50"}
-TransactionSheet["Andrew"] = {"t-shirt": "$20", "hoodie": "$30"}
+TransactionSheet["Jason"] = {"wallet": 250}
+TransactionSheet["Michael"] = {"pair of sneakers": 50}
+TransactionSheet["Andrew"] = {"t-shirt": 20, "hoodie": 30}
 print(TransactionSheet)
-print(TransactionSheet["Andrew"]["hoodie"])
-
-
-
-
-
+print(price(TransactionSheet["Andrew"]["hoodie"]))
 
 
 
@@ -149,15 +147,10 @@ print(TransactionSheet["Andrew"]["hoodie"])
 # Topic: nested dictionaries
 
 # Code here
-
-
-
-
-
-
-
-
-
+TransactionSheet["Jason"]["wallet"] = 100
+TransactionSheet["Alex"]["sweater"] = 20
+TransactionSheet["Henry"]["scarf"] = 200
+print(TransactionSheet)
 
 
 
@@ -174,6 +167,16 @@ print(TransactionSheet["Andrew"]["hoodie"])
 # Topic: nested dictionaries
 
 # Code here
+
+entrynumber = 0
+for x in TransactionSheet:
+    for y in TransactionSheet[x]:
+        Value = TransactionSheet[x][y]
+        DiscountValue = Value / 10 * 9
+        TransactionSheet[x][y] = DiscountValue
+        print(DiscountValue)
+
+print(TransactionSheet)
 
 
 
