@@ -71,7 +71,12 @@ numbers = [3, 9, 16, 25, 36]
 
 # Code here
 
-
+BankAccount = {
+    "Alex": "$100",
+    "Kevin": "$50",
+    "Henry": "$500"
+}
+print(BankAccount)
 
 
 
@@ -91,14 +96,19 @@ numbers = [3, 9, 16, 25, 36]
 
 # Code here
 
-
-
-
-
-
-
-
-
+TransactionSheet = {
+    "Alex": {
+        "sweater": "$100"
+    },
+    "Kevin": {
+        "bookbag": "$50"
+    },
+    "Henry": {
+        "scarf": "$500"
+    }
+}
+print(TransactionSheet)
+#print(TransactionSheet[TransactionSheet["Alex"]])
 
 
 ############# Q15 B. Using the dictionary from Q15, add the following transactions and print the dictionary:
@@ -114,8 +124,11 @@ numbers = [3, 9, 16, 25, 36]
 
 # Code here
 
-
-
+TransactionSheet["Jason"] = {"wallet": "$250"}
+TransactionSheet["Michael"] = {"pair of sneakers": "$50"}
+TransactionSheet["Andrew"] = {"t-shirt": "$20", "hoodie": "$30"}
+print(TransactionSheet)
+print(TransactionSheet["Andrew"]["hoodie"])
 
 
 
